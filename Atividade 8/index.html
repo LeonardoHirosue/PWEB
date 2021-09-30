@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Atividade 8
+    </title>
+    <script src="app.js"></script>
+</head>
+
+<body style="text-align: center; background-color:ivory;">
+    <img src="https://upload.wikimedia.org/wikipedia/pt/a/a7/Free_Guy_poster.jpg" class="page-logo" alt="">
+    <h1 class="page-title">Pesquisa de Satisfação</h1>
+    <div id="resultado"></div>
+    <div>
+        <h4>Qual a sua idade?</h4> 
+        <input type="number" id="idade" required>
+    
+        <h4>Qual o seu gênero?</h4>
+        <input type="radio" name="sexo" value="masculino" required> Masculino <br>
+        <input type="radio" name="sexo" value="feminino"> Feminino <br>
+    
+        <h4>O que achou do filme?</h4>
+        <input type="radio" name="opiniao" value="4" required> Ótimo <br>
+        <input type="radio" name="opiniao" value="3"> Bom <br>
+        <input type="radio" name="opiniao" value="2"> Regular <br>
+        <input type="radio" name="opiniao" value="1"> Péssimo <br>    
+        <br>
+        <button onClick="guardarResposta()">Enviar Resposta</button>
+        <br>
+        <br>
+    </div>
+    <div id="divBtnEstatisticas">
+        
+    </div>
+</body>
+
+</html>

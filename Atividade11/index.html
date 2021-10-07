@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<script>
+    //Atividade 11.1
+    function Retangulo(x, y){
+        this.base = x;
+        this.altura = y;
+        this.area = x*y;
+        // var area = x*y;
+        // this.getArea = function (){
+        //     return area;
+        // }        
+    };
+    
+    var retangulo1 = new Retangulo(10,2);      
+    // alert(retangulo1.getArea());
+    alert(retangulo1.area)
+    
+    //Atividade 11.2    
+    ContaCorrente.prototype = new Conta();
+    ContaPoupanca.prototype = new Conta();
+
+    function Conta(){
+        var nome;
+        var correntista;
+        var banco;
+        var numeroConta;
+        var saldo;
+        
+        this.getNome = function(){
+            return nome;
+        };
+        this.setNome = function(value){
+            nome = value;
+        };
+        
+        this.getCorrentista = function(){
+            return correntista;
+        };
+        this.setCorrentista = function(value){
+            correntista = value;
+        };
+        
+        this.getBanco = function(){
+            return banco;
+        };
+        this.setBanco = function(value){
+            banco = value;
+        };
+        
+        this.getNumeroConta = function(){
+            return numeroConta;
+        };
+        this.setNumeroConta = function(value){
+            numeroConta = value;
+        };
+        
+        this.getSaldo = function(){
+            return saldo;
+        };
+        this.setSaldo = function(value){
+            saldo = value;
+        };
+    }
+    
+    function ContaCorrente(){
+        var saldoEspecial;
+        
+        this.getSaldoEspecial = function(){
+            return saldoEspecial;
+        };
+        this.setSaldoEspecial = function(value){
+            saldoEspecial = value;
+        };
+    }
+    
+    function ContaPoupanca(){
+        var juros;
+        var dataVencimento;
+        
+        this.getJuros = function(){
+            return juros;
+        };
+        this.setJuros = function(value){
+            juros = value;
+        };
+        
+        this.getDataVencimento = function(){
+            return dataVencimento;
+        };
+        this.setDataVencimento = function(value){
+            dataVencimento = value;
+        };
+    }
+    
+    //Criando novo Objeto ContaCorrente
+    nContaCorrente = new ContaCorrente();
+    nContaCorrente.setNome('Leonardo Naoto Hirosue');
+    nContaCorrente.setCorrentista('Leonardo Naoto Hirosue');
+    nContaCorrente.setBanco('NuBank');
+    nContaCorrente.setNumeroConta('123456');
+    nContaCorrente.setSaldo(100);
+    nContaCorrente.setSaldoEspecial(300);
+
+    //Exibindo dados do Objeto ContaCorrente
+    alert(nContaCorrente.getNome() + '\n' +
+    nContaCorrente.getCorrentista() + '\n' +
+    nContaCorrente.getBanco() + '\n' +
+    nContaCorrente.getNumeroConta() + '\n' +
+    nContaCorrente.getSaldo() + '\n' +
+    nContaCorrente.getSaldoEspecial())
+
+    //Criando novo Objeto ContaPoupança
+    nContaPoupanca = new ContaPoupanca();
+    nContaPoupanca.setNome('Leonardo Naoto Hirosue');
+    nContaPoupanca.setCorrentista('Leonardo Naoto Hirosue');
+    nContaPoupanca.setBanco('NuBank');
+    nContaPoupanca.setNumeroConta('123456');
+    nContaPoupanca.setSaldo(10000);
+    nContaPoupanca.setJuros(5);
+    nContaPoupanca.setDataVencimento('31/12/2021')
+
+    //Exibindo dados do Objeto ContaPoupanca
+    alert(nContaPoupanca.getNome() + '\n' +
+    nContaPoupanca.getCorrentista() + '\n' +
+    nContaPoupanca.getBanco() + '\n' +
+    nContaPoupanca.getNumeroConta() + '\n' +
+    nContaPoupanca.getSaldo() + '\n' +
+    nContaPoupanca.getJuros() + '\n' +
+    nContaPoupanca.getDataVencimento())
+</script>

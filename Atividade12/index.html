@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Atividade 12</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Abra a Janela</h1>
+    <img onmouseover= "mOver(this)" onmouseout="mOut(this)" onmousedown="mDown(this)" onmouseup="mUp(this)" src="janelafechada.png">
+
+    <script>
+        function mOver(obj){
+            obj.src="janelaaberta.png"
+        }
+
+        function mOut(obj) {
+            obj.src="janelafechada.png"
+        }
+
+		function mDown(obj) {
+			obj.src="janelaquebra.png"
+		}
+
+		function mUp(obj) {
+			obj.src="janelaaberta.png"
+		}		
+	</script>
+</body>
+
+</html>

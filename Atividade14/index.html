@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Atividade 14
+    </title>
+    <script src="app.js"></script>
+</head>
+
+<body style="text-align: left; background-color:ivory;">
+    <form name="formulario1" method="post">
+        <h1 class="page-title">Formulário Principal</h1>
+        <div>
+            <lable>Nome:</lable>
+            <br> 
+            <input type="text" id="nome">
+            <br>
+            <br>
+            <lable>E-mail:</lable>
+            <br> 
+            <input type="email" id="email">
+            <br>
+            <br>
+            <lable>Comentário:</lable>
+            <br> 
+            <textarea name="comentario" rows="5" cols="50" id="comentario">
+            </textarea>
+            <br>
+        </div>
+        <div style="text-align: center">
+            <h3>Pesquisa:</h3>
+    
+            <h4>Primeira vez nessa página?</h4>
+            <input type="radio" name="primeiravisita" value="sim" required> Sim
+            <input type="radio" name="primeiravisita" value="não"> Não <br>
+       
+            <br>
+    
+            <input TYPE="submit" VALUE="Enviar" onclick="validarFormulario()">
+            <input TYPE="reset" VALUE="Limpar">
+    
+            <br>
+        </div>
+    </form>
+</body>
+
+</html>
